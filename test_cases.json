@@ -1,6 +1,6 @@
 [
   {
-    "name": "drop spot A",
+    "name": "drop SPOT POFA",
     "d1": 0.9,
     "d2": 0.9,
     "d3": 1.5,
@@ -16,7 +16,7 @@
     "direction": "positive"
   },
   {
-    "name": "drop spot B",
+    "name": "drop SPOT POFB",
     "d1": 0.9,
     "d2": 0.9,
     "d3": 1.5,
@@ -32,7 +32,7 @@
     "direction": "positive"
   },
   {
-    "name": "drop bcr2 A",
+    "name": "drop BCR2 POFA",
     "d1": 0.9,
     "d2": 0.9,
     "d3": 1.5,
@@ -48,7 +48,7 @@
     "direction": "positive"
   },
   {
-    "name": "drop bcr2 B",
+    "name": "drop BCR2 POFB",
     "d1": 0.9,
     "d2": 0.9,
     "d3": 1.5,
@@ -64,7 +64,7 @@
     "direction": "negative"
   },
   {
-    "name": "pick spot A",
+    "name": "pick BCR2 POFA",
     "d1": 0.9,
     "d2": 0.9,
     "d3": 1.5,
@@ -80,7 +80,7 @@
     "direction": "negative"
   },
   {
-    "name": "pick bcr2 A",
+    "name": "pick BCR2 POFA",
     "d1": 1.0,
     "d2": 1.9,
     "d3": 1.5,
@@ -96,7 +96,7 @@
     "direction": "negative"
   },
   {
-    "name": "drop/pick box B",
+    "name": "drop/pick BOX POFB",
     "d1": 1.0,
     "d2": 1.9,
     "d3": 1.5,
@@ -112,7 +112,7 @@
     "direction": "negative"
   },
   {
-    "name": "drop/pick box A (1)",
+    "name": "drop/pick BOX POFA (1)",
     "d1": 1.0,
     "d2": 1.9,
     "d3": 1.5,
@@ -128,7 +128,7 @@
     "direction": "positive"
   },
   {
-    "name": "drop/pick box A (2)",
+    "name": "drop/pick BOX POFA (2)",
     "d1": 1.2,
     "d2": 1.5,
     "d3": 1.0,
@@ -144,7 +144,7 @@
     "direction": "negative"
   },
   {
-    "name": "drop/pick spot MP3",
+    "name": "drop/pick SPOT MP3",
     "d1": 1.0,
     "d2": 1.5,
     "d3": 1.5,
