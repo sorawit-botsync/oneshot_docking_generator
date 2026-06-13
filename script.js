@@ -219,42 +219,9 @@ let testCases = [];
 
 async function loadTestCases() {
     try {
-        const response = await fetch('test_case.txt');
+        const response = await fetch('test_cases.json');
         if (!response.ok) return; // Silent return if file doesn't exist
-        const text = await response.text();
-        const lines = text.split('\n');
-        
-        let currentTest = null;
-        
-        for (let line of lines) {
-            line = line.trim();
-            if (line.startsWith('test') && !line.includes('template')) {
-                if (currentTest) testCases.push(currentTest);
-                currentTest = { name: line, values: {} };
-            } else if (currentTest && line) {
-                if (line.includes('d1')) currentTest.values.d1 = parseFloat(line.split('d1')[1]);
-                else if (line.includes('d2')) currentTest.values.d2 = parseFloat(line.split('d2')[1]);
-                else if (line.includes('d3')) currentTest.values.d3 = parseFloat(line.split('d3')[1]);
-                else if (line.includes('A1')) {
-                    const match = line.match(/\(([^,]+),\s*([^)]+)\)/);
-                    if (match) {
-                        currentTest.values.a1_x = parseFloat(match[1]);
-                        currentTest.values.a1_y = parseFloat(match[2]);
-                    }
-                }
-                else if (line.includes('A2')) {
-                    const match = line.match(/\(([^,]+),\s*([^)]+)\)/);
-                    if (match) {
-                        currentTest.values.a2_x = parseFloat(match[1]);
-                        currentTest.values.a2_y = parseFloat(match[2]);
-                    }
-                }
-                else if (line.includes('H ')) currentTest.values.sensor_h = parseFloat(line.split('H')[1]);
-                else if (line.includes('positive')) currentTest.values.direction = 'positive';
-                else if (line.includes('negative')) currentTest.values.direction = 'negative';
-            }
-        }
-        if (currentTest) testCases.push(currentTest);
+        testCases = await response.json();
         
         const presetSelect = document.getElementById('preset');
         testCases.forEach((tc, index) => {
@@ -266,15 +233,15 @@ async function loadTestCases() {
         
         presetSelect.addEventListener('change', (e) => {
             if (e.target.value === '') return;
-            const tc = testCases[e.target.value].values;
+            const tc = testCases[e.target.value];
             if (tc.d1 !== undefined) inputs.d1.value = tc.d1;
             if (tc.d2 !== undefined) inputs.d2.value = tc.d2;
             if (tc.d3 !== undefined) inputs.d3.value = tc.d3;
-            if (tc.a1_x !== undefined) inputs.a1_x.value = tc.a1_x;
-            if (tc.a1_y !== undefined) inputs.a1_y.value = tc.a1_y;
-            if (tc.a2_x !== undefined) inputs.a2_x.value = tc.a2_x;
-            if (tc.a2_y !== undefined) inputs.a2_y.value = tc.a2_y;
-            if (tc.sensor_h !== undefined) inputs.sensor_h.value = tc.sensor_h;
+            if (tc.a1 && tc.a1.x !== undefined) inputs.a1_x.value = tc.a1.x;
+            if (tc.a1 && tc.a1.y !== undefined) inputs.a1_y.value = tc.a1.y;
+            if (tc.a2 && tc.a2.x !== undefined) inputs.a2_x.value = tc.a2.x;
+            if (tc.a2 && tc.a2.y !== undefined) inputs.a2_y.value = tc.a2.y;
+            if (tc.h !== undefined) inputs.sensor_h.value = tc.h;
             if (tc.direction !== undefined) inputs.direction.value = tc.direction;
             draw();
         });
