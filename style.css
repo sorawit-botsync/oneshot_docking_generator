@@ -9,6 +9,7 @@
     --point-r: #10b981; /* green */
     --point-d: #f59e0b; /* amber */
     --point-a: #ef4444; /* red */
+    --point-t: #8b5cf6; /* purple */
     --line-path: rgba(255, 255, 255, 0.5);
     --grid-line: rgba(255, 255, 255, 0.05);
     --axis-line: rgba(255, 255, 255, 0.2);
@@ -113,7 +114,15 @@ hr {
     height: 100%;
 }
 
-header h1 {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.header-main h1 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 4px;
@@ -122,8 +131,49 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
-header p {
+.header-main p {
     color: var(--text-secondary);
+}
+
+.explanation-box {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid var(--panel-border);
+    border-radius: 12px;
+    padding: 16px 24px;
+    display: flex;
+    gap: 32px;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.expl-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.expl-col strong {
+    color: var(--accent-hover);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+}
+
+.expl-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.expl-col li {
+    color: var(--text-secondary);
+}
+
+.expl-col b {
+    color: var(--text-primary);
 }
 
 .plot-container {

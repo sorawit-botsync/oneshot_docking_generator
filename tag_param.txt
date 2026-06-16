@@ -1,0 +1,15 @@
+BCR1
+width : 1.25
+height : 0.4
+
+BCR2
+width : 1.15
+height : 0.395
+
+SPOT
+width : 1.650
+height : 0.395
+
+BOX
+width : 1.830
+height : 0.395
