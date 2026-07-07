@@ -157,44 +157,44 @@
     "name": "drop/pick ENG POFA-1",
     "d1": 1.3,
     "d2": 1.5,
-    "a1": { "x": -6.05, "y": -1.3 },
-    "a2": { "x": -10.5, "y": -1.3 },
+    "a1": { "x": -6.05, "y": -2.8 },
+    "a2": { "x": -10.5, "y": -2.8 },
     "reflect_h": 2.3,
     "tag_w": 1.45,
     "tag_h": 0.395,
-    "direction": "positive"
+    "direction": "negative"
   },
   {
     "name": "drop/pick ENG POFA-2",
     "d1": 1.3,
     "d2": 1.5,
-    "a1": { "x": 3.45, "y": 1.3 },
-    "a2": { "x": 7.9, "y": 1.3 },
+    "a1": { "x": 3.45, "y": 2.8 },
+    "a2": { "x": 7.9, "y": 2.8 },
     "reflect_h": 2.3,
     "tag_w": 1.450,
     "tag_h": 0.45,
-    "direction": "negative"
+    "direction": "positive"
   },
   {
     "name": "drop/pick ENG POFB-1",
     "d1": 1.3,
     "d2": 1.5,
-    "a1": { "x": 3.55, "y": -1.3 },
-    "a2": { "x": 8, "y": -1.3 },
+    "a1": { "x": 3.55, "y": -2.8 },
+    "a2": { "x": 8, "y": -2.8 },
     "reflect_h": 2.3,
     "tag_w": 1.45,
     "tag_h": 0.395,
-    "direction": "positive"
+    "direction": "negative"
   },
   {
     "name": "drop/pick ENG POFB-2",
     "d1": 1.3,
     "d2": 1.5,
-    "a1": { "x": 0.95, "y": 1.3 },
-    "a2": { "x": 5.4, "y": 1.3 },
+    "a1": { "x": 0.95, "y": 2.8 },
+    "a2": { "x": 5.4, "y": 2.8 },
     "reflect_h": 2.3,
     "tag_w": 1.450,
     "tag_h": 0.395,
-    "direction": "negative"
+    "direction": "positive"
   }
 ]
