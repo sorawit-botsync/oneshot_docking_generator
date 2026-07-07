@@ -118,7 +118,7 @@
     "reflect_h": 2.3,
     "tag_w": 1.450,
     "tag_h": 0.45,
-    "direction": "positive"
+    "direction": "negative"
   },
   {
     "name": "drop/pick TRN POFA-2",
@@ -129,7 +129,7 @@
     "reflect_h": 2.3,
     "tag_w": 1.450,
     "tag_h": 0.45,
-    "direction": "negative"
+    "direction": "positive"
   },
   {
     "name": "drop/pick TRN POFB-1",
@@ -140,7 +140,7 @@
     "reflect_h": 2.3,
     "tag_w": 1.450,
     "tag_h": 0.45,
-    "direction": "positive"
+    "direction": "negative"
   },
   {
     "name": "drop/pick TRN POFB-2",
@@ -151,7 +151,7 @@
     "reflect_h": 2.3,
     "tag_w": 1.450,
     "tag_h": 0.45,
-    "direction": "negative"
+    "direction": "positive"
   },
   {
     "name": "drop/pick ENG POFA-1",
@@ -162,7 +162,7 @@
     "reflect_h": 2.3,
     "tag_w": 1.45,
     "tag_h": 0.395,
-    "direction": "negative"
+    "direction": "positive"
   },
   {
     "name": "drop/pick ENG POFA-2",
@@ -173,7 +173,7 @@
     "reflect_h": 2.3,
     "tag_w": 1.450,
     "tag_h": 0.45,
-    "direction": "positive"
+    "direction": "negative"
   },
   {
     "name": "drop/pick ENG POFB-1",
@@ -184,7 +184,7 @@
     "reflect_h": 2.3,
     "tag_w": 1.45,
     "tag_h": 0.395,
-    "direction": "negative"
+    "direction": "positive"
   },
   {
     "name": "drop/pick ENG POFB-2",
@@ -195,6 +195,6 @@
     "reflect_h": 2.3,
     "tag_w": 1.450,
     "tag_h": 0.395,
-    "direction": "positive"
+    "direction": "negative"
   }
 ]
